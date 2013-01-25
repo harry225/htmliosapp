@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<title>List1</title>
+	<link rel="stylesheet" href="iui/iui.css" type="text/css" />
+	<link rel="stylesheet" href="iui/t/default/default-theme.css"  type="text/css"/>
+	<script type="application/x-javascript" src="iui/iui.js"></script>
+
+    <script src="jquery.js" type="text/javascript" language="javascript"></script>
+    <script src="jquery.xml2json.js" type="text/javascript" language="javascript"></script>
+
+    <script type="text/javascript">
+        
+       $.get('xmlfile.xml', function(xml){
+             $('#screen1').html('');
+        /* clear result div */
+             var rss = $.xml2json(xml);
+            // $('#items').append('<ul id="screen1" title="Screen 1" selected="true">');
+             
+             var cnt=0;
+             
+             $.each(rss.channel.item, function(i, item){
+                    
+                    
+                    
+                    $('#screen1').append('<li><a href="#screen'+cnt+'">'+item.title+'</a></li>');
+                    
+                    cnt=cnt+1;
+                    
+                    //+'<strong>'+item.title+'</strong><br/>'      +'<u>Description</u>: '+item.description+'<br/>'      +'<u>Author</u>: '+item.author+'<br/>'      +'<small style="color:green;">'+item.link+'</small>'    +'</p>');
+                    });
+             
+             $('#items').append('</ul>');
+             });
+        </script>
+
+</head>
+
+<body>
+   
+        
+        
+	<ul id="screen1" title="Screen 1" selected="true">
+		<!--<li><a href="#screen2">Go to Screen #2</a></li>
+		<li><a href="#screen3">Go to Screen #3</a></li>-->
+	</ul>
+    <!-- <div id="items">
+    
+        
+    </div>  -->
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./src/jfeed.js">
+        $( document ).ready( function() {
+                        
+                          alert('fdfds');
+                        jQuery.getFeed({
+                                       url: 'https://www.odesk.com/jobs/rss?q=mobile-app',
+                                       success: function(feed) {
+                                       alert(feed.title);
+                                       }
+                                       });
+                        });
+        
+        </script>
+    <script>
+function myFunction()
+        
+{
+	alert('hello');
+    
+  
+}
+</script>
+</head>
+<body>
+
+<p>Hello World</p>
+
+<button onclick="myFunction()">Say Hello</button>
+    
+</br>
+<a href="button://NextViewController" class="buttonStyle">Click me! For NextViewController</a>
+    
+    
+    
+</body>
+</html>
