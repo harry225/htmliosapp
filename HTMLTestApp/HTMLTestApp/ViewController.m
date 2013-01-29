@@ -39,14 +39,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-//    [self.mywebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.odesk.com/jobs/rss?q=mobile"]]];
+    [self setTitle:@"My Data"];
+    
+    
+//      [self.mywebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.2.11/jqdemo/demo.html"]]];
+    
+////    [self.mywebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.2.11/htmliosapp/table.html"]]];
+//
+    
+//    NSString *path = [[NSBundle mainBundle] bundlePath];
+//    NSURL *baseURL = [NSURL fileURLWithPath:path];
     
     NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
     NSString *secondParentPath = [[bundlePath stringByDeletingLastPathComponent] stringByDeletingLastPathComponent];
     
     NSLog(@"path %@",secondParentPath);
     
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html" ];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"html"];
     
     NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
     [self.mywebview loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:@"myinfo"]];
@@ -54,7 +63,7 @@
     [self.mywebview setDelegate:self];
     
     
-    
+  
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,7 +82,7 @@
             // Do custom code
             
             
-            NSLog(@"Done");
+            NSLog(@"Done  %@",[[request URL] absoluteString]);
             
             NextViewController *nvc=[[NextViewController alloc]init];
             [self.navigationController pushViewController:nvc animated:YES];
@@ -98,6 +107,20 @@
     
     
 
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+//    NSString *cssPath = [[NSBundle mainBundle] pathForResource:@"jquery.mobile-1.2.0.min"
+//                                                        ofType:@"css"];
+//    NSString *js = @"document.getElementsByTagName('link').setAttribute('href','";
+//    NSString *js2 = [js stringByAppendingString:cssPath];
+//    NSString *finalJS = [js2 stringByAppendingString:@"');"];
+//    
+//    //check element structure
+//    NSString *res = [webView stringByEvaluatingJavaScriptFromString:finalJS];
+    
+    
+    
 }
 - (void)alertViewCancel:(UIAlertView *)alertView
 {

@@ -21,6 +21,13 @@
 		C88DE86F16B1AEEE00C2C051 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C88DE86E16B1AEEE00C2C051 /* test.html */; };
 		C88DE87316B1B38F00C2C051 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88DE87116B1B38F00C2C051 /* NextViewController.m */; };
 		C88DE87416B1B38F00C2C051 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88DE87216B1B38F00C2C051 /* NextViewController.xib */; };
+		C8B4120F16B8375800A1F75C /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120516B8375800A1F75C /* demo.html */; };
+		C8B4121016B8375800A1F75C /* ajax-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120716B8375800A1F75C /* ajax-loader.gif */; };
+		C8B4121116B8375800A1F75C /* icons-18-black.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120816B8375800A1F75C /* icons-18-black.png */; };
+		C8B4121216B8375800A1F75C /* icons-18-white.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120916B8375800A1F75C /* icons-18-white.png */; };
+		C8B4121316B8375800A1F75C /* icons-36-black.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120A16B8375800A1F75C /* icons-36-black.png */; };
+		C8B4121416B8375800A1F75C /* icons-36-white.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120B16B8375800A1F75C /* icons-36-white.png */; };
+		C8B4121D16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C8B4121C16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,15 @@
 		C88DE87016B1B38E00C2C051 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		C88DE87116B1B38F00C2C051 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		C88DE87216B1B38F00C2C051 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		C8B4120516B8375800A1F75C /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		C8B4120716B8375800A1F75C /* ajax-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ajax-loader.gif"; sourceTree = "<group>"; };
+		C8B4120816B8375800A1F75C /* icons-18-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-18-black.png"; sourceTree = "<group>"; };
+		C8B4120916B8375800A1F75C /* icons-18-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-18-white.png"; sourceTree = "<group>"; };
+		C8B4120A16B8375800A1F75C /* icons-36-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-36-black.png"; sourceTree = "<group>"; };
+		C8B4120B16B8375800A1F75C /* icons-36-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-36-white.png"; sourceTree = "<group>"; };
+		C8B4120C16B8375800A1F75C /* jquery-1.8.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.8.2.min.js"; sourceTree = "<group>"; };
+		C8B4120E16B8375800A1F75C /* jquery.mobile-1.2.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-1.2.0.min.js"; sourceTree = "<group>"; };
+		C8B4121C16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery.mobile-1.2.0.min.css"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,7 @@
 		C88DE83C16B1AD1800C2C051 = {
 			isa = PBXGroup;
 			children = (
+				C8B4121C16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css */,
 				C88DE85116B1AD1800C2C051 /* HTMLTestApp */,
 				C88DE84A16B1AD1800C2C051 /* Frameworks */,
 				C88DE84816B1AD1800C2C051 /* Products */,
@@ -90,6 +107,7 @@
 		C88DE85116B1AD1800C2C051 /* HTMLTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8B4120416B8375800A1F75C /* JQDemo */,
 				C88DE86E16B1AEEE00C2C051 /* test.html */,
 				C88DE85A16B1AD1800C2C051 /* AppDelegate.h */,
 				C88DE85B16B1AD1800C2C051 /* AppDelegate.m */,
@@ -116,6 +134,29 @@
 				C88DE86116B1AD1800C2C051 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8B4120416B8375800A1F75C /* JQDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C8B4120516B8375800A1F75C /* demo.html */,
+				C8B4120616B8375800A1F75C /* images */,
+				C8B4120C16B8375800A1F75C /* jquery-1.8.2.min.js */,
+				C8B4120E16B8375800A1F75C /* jquery.mobile-1.2.0.min.js */,
+			);
+			path = JQDemo;
+			sourceTree = "<group>";
+		};
+		C8B4120616B8375800A1F75C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C8B4120716B8375800A1F75C /* ajax-loader.gif */,
+				C8B4120816B8375800A1F75C /* icons-18-black.png */,
+				C8B4120916B8375800A1F75C /* icons-18-white.png */,
+				C8B4120A16B8375800A1F75C /* icons-36-black.png */,
+				C8B4120B16B8375800A1F75C /* icons-36-white.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +217,13 @@
 				C88DE86816B1AD1800C2C051 /* ViewController.xib in Resources */,
 				C88DE86F16B1AEEE00C2C051 /* test.html in Resources */,
 				C88DE87416B1B38F00C2C051 /* NextViewController.xib in Resources */,
+				C8B4120F16B8375800A1F75C /* demo.html in Resources */,
+				C8B4121016B8375800A1F75C /* ajax-loader.gif in Resources */,
+				C8B4121116B8375800A1F75C /* icons-18-black.png in Resources */,
+				C8B4121216B8375800A1F75C /* icons-18-white.png in Resources */,
+				C8B4121316B8375800A1F75C /* icons-36-black.png in Resources */,
+				C8B4121416B8375800A1F75C /* icons-36-white.png in Resources */,
+				C8B4121D16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
