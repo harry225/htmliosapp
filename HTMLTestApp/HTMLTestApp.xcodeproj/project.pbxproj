@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8678F5C16C58D9B0089AD64 /* jqdemo.zip in Resources */ = {isa = PBXBuildFile; fileRef = C8678F5B16C58D9B0089AD64 /* jqdemo.zip */; };
+		C8678F6A16C58E0B0089AD64 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C8678F6016C58E0B0089AD64 /* ioapi.c */; };
+		C8678F6B16C58E0B0089AD64 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C8678F6216C58E0B0089AD64 /* mztools.c */; };
+		C8678F6C16C58E0B0089AD64 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C8678F6416C58E0B0089AD64 /* unzip.c */; };
+		C8678F6D16C58E0B0089AD64 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C8678F6616C58E0B0089AD64 /* zip.c */; };
+		C8678F6E16C58E0B0089AD64 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C8678F6916C58E0B0089AD64 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8678F7016C58E2C0089AD64 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C8678F6F16C58E2C0089AD64 /* libz.dylib */; };
 		C88DE84C16B1AD1800C2C051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88DE84B16B1AD1800C2C051 /* UIKit.framework */; };
 		C88DE84E16B1AD1800C2C051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88DE84D16B1AD1800C2C051 /* Foundation.framework */; };
 		C88DE85016B1AD1800C2C051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88DE84F16B1AD1800C2C051 /* CoreGraphics.framework */; };
@@ -21,16 +28,22 @@
 		C88DE86F16B1AEEE00C2C051 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C88DE86E16B1AEEE00C2C051 /* test.html */; };
 		C88DE87316B1B38F00C2C051 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88DE87116B1B38F00C2C051 /* NextViewController.m */; };
 		C88DE87416B1B38F00C2C051 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88DE87216B1B38F00C2C051 /* NextViewController.xib */; };
-		C8B4120F16B8375800A1F75C /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120516B8375800A1F75C /* demo.html */; };
-		C8B4121016B8375800A1F75C /* ajax-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120716B8375800A1F75C /* ajax-loader.gif */; };
-		C8B4121116B8375800A1F75C /* icons-18-black.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120816B8375800A1F75C /* icons-18-black.png */; };
-		C8B4121216B8375800A1F75C /* icons-18-white.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120916B8375800A1F75C /* icons-18-white.png */; };
-		C8B4121316B8375800A1F75C /* icons-36-black.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120A16B8375800A1F75C /* icons-36-black.png */; };
-		C8B4121416B8375800A1F75C /* icons-36-white.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B4120B16B8375800A1F75C /* icons-36-white.png */; };
-		C8B4121D16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C8B4121C16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8678F5B16C58D9B0089AD64 /* jqdemo.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = jqdemo.zip; sourceTree = "<group>"; };
+		C8678F5F16C58E0B0089AD64 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C8678F6016C58E0B0089AD64 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		C8678F6116C58E0B0089AD64 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C8678F6216C58E0B0089AD64 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		C8678F6316C58E0B0089AD64 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		C8678F6416C58E0B0089AD64 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		C8678F6516C58E0B0089AD64 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C8678F6616C58E0B0089AD64 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		C8678F6716C58E0B0089AD64 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C8678F6816C58E0B0089AD64 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		C8678F6916C58E0B0089AD64 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		C8678F6F16C58E2C0089AD64 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C88DE84716B1AD1800C2C051 /* HTMLTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTMLTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88DE84B16B1AD1800C2C051 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C88DE84D16B1AD1800C2C051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,15 +64,6 @@
 		C88DE87016B1B38E00C2C051 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		C88DE87116B1B38F00C2C051 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		C88DE87216B1B38F00C2C051 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
-		C8B4120516B8375800A1F75C /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
-		C8B4120716B8375800A1F75C /* ajax-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ajax-loader.gif"; sourceTree = "<group>"; };
-		C8B4120816B8375800A1F75C /* icons-18-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-18-black.png"; sourceTree = "<group>"; };
-		C8B4120916B8375800A1F75C /* icons-18-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-18-white.png"; sourceTree = "<group>"; };
-		C8B4120A16B8375800A1F75C /* icons-36-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-36-black.png"; sourceTree = "<group>"; };
-		C8B4120B16B8375800A1F75C /* icons-36-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-36-white.png"; sourceTree = "<group>"; };
-		C8B4120C16B8375800A1F75C /* jquery-1.8.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.8.2.min.js"; sourceTree = "<group>"; };
-		C8B4120E16B8375800A1F75C /* jquery.mobile-1.2.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-1.2.0.min.js"; sourceTree = "<group>"; };
-		C8B4121C16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery.mobile-1.2.0.min.css"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8678F7016C58E2C0089AD64 /* libz.dylib in Frameworks */,
 				C88DE84C16B1AD1800C2C051 /* UIKit.framework in Frameworks */,
 				C88DE84E16B1AD1800C2C051 /* Foundation.framework in Frameworks */,
 				C88DE85016B1AD1800C2C051 /* CoreGraphics.framework in Frameworks */,
@@ -76,10 +81,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8678F5D16C58E0B0089AD64 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				C8678F5E16C58E0B0089AD64 /* minizip */,
+				C8678F6816C58E0B0089AD64 /* SSZipArchive.h */,
+				C8678F6916C58E0B0089AD64 /* SSZipArchive.m */,
+			);
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		C8678F5E16C58E0B0089AD64 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				C8678F5F16C58E0B0089AD64 /* crypt.h */,
+				C8678F6016C58E0B0089AD64 /* ioapi.c */,
+				C8678F6116C58E0B0089AD64 /* ioapi.h */,
+				C8678F6216C58E0B0089AD64 /* mztools.c */,
+				C8678F6316C58E0B0089AD64 /* mztools.h */,
+				C8678F6416C58E0B0089AD64 /* unzip.c */,
+				C8678F6516C58E0B0089AD64 /* unzip.h */,
+				C8678F6616C58E0B0089AD64 /* zip.c */,
+				C8678F6716C58E0B0089AD64 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		C88DE83C16B1AD1800C2C051 = {
 			isa = PBXGroup;
 			children = (
-				C8B4121C16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css */,
+				C8678F6F16C58E2C0089AD64 /* libz.dylib */,
 				C88DE85116B1AD1800C2C051 /* HTMLTestApp */,
 				C88DE84A16B1AD1800C2C051 /* Frameworks */,
 				C88DE84816B1AD1800C2C051 /* Products */,
@@ -107,6 +138,7 @@
 		C88DE85116B1AD1800C2C051 /* HTMLTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8678F5D16C58E0B0089AD64 /* Zip */,
 				C8B4120416B8375800A1F75C /* JQDemo */,
 				C88DE86E16B1AEEE00C2C051 /* test.html */,
 				C88DE85A16B1AD1800C2C051 /* AppDelegate.h */,
@@ -139,24 +171,9 @@
 		C8B4120416B8375800A1F75C /* JQDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C8B4120516B8375800A1F75C /* demo.html */,
-				C8B4120616B8375800A1F75C /* images */,
-				C8B4120C16B8375800A1F75C /* jquery-1.8.2.min.js */,
-				C8B4120E16B8375800A1F75C /* jquery.mobile-1.2.0.min.js */,
+				C8678F5B16C58D9B0089AD64 /* jqdemo.zip */,
 			);
 			path = JQDemo;
-			sourceTree = "<group>";
-		};
-		C8B4120616B8375800A1F75C /* images */ = {
-			isa = PBXGroup;
-			children = (
-				C8B4120716B8375800A1F75C /* ajax-loader.gif */,
-				C8B4120816B8375800A1F75C /* icons-18-black.png */,
-				C8B4120916B8375800A1F75C /* icons-18-white.png */,
-				C8B4120A16B8375800A1F75C /* icons-36-black.png */,
-				C8B4120B16B8375800A1F75C /* icons-36-white.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,13 +234,7 @@
 				C88DE86816B1AD1800C2C051 /* ViewController.xib in Resources */,
 				C88DE86F16B1AEEE00C2C051 /* test.html in Resources */,
 				C88DE87416B1B38F00C2C051 /* NextViewController.xib in Resources */,
-				C8B4120F16B8375800A1F75C /* demo.html in Resources */,
-				C8B4121016B8375800A1F75C /* ajax-loader.gif in Resources */,
-				C8B4121116B8375800A1F75C /* icons-18-black.png in Resources */,
-				C8B4121216B8375800A1F75C /* icons-18-white.png in Resources */,
-				C8B4121316B8375800A1F75C /* icons-36-black.png in Resources */,
-				C8B4121416B8375800A1F75C /* icons-36-white.png in Resources */,
-				C8B4121D16B8400D00A1F75C /* jquery.mobile-1.2.0.min.css in Resources */,
+				C8678F5C16C58D9B0089AD64 /* jqdemo.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +249,11 @@
 				C88DE85C16B1AD1800C2C051 /* AppDelegate.m in Sources */,
 				C88DE86516B1AD1800C2C051 /* ViewController.m in Sources */,
 				C88DE87316B1B38F00C2C051 /* NextViewController.m in Sources */,
+				C8678F6A16C58E0B0089AD64 /* ioapi.c in Sources */,
+				C8678F6B16C58E0B0089AD64 /* mztools.c in Sources */,
+				C8678F6C16C58E0B0089AD64 /* unzip.c in Sources */,
+				C8678F6D16C58E0B0089AD64 /* zip.c in Sources */,
+				C8678F6E16C58E0B0089AD64 /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,11 +332,15 @@
 		C88DE86C16B1AD1800C2C051 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ajeet Singh (QT4GYM2LTE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ajeet Singh (QT4GYM2LTE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTMLTestApp/HTMLTestApp-Prefix.pch";
 				INFOPLIST_FILE = "HTMLTestApp/HTMLTestApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "95A3C405-F21C-47C3-B9B4-71CA84263CBA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "95A3C405-F21C-47C3-B9B4-71CA84263CBA";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -329,11 +349,15 @@
 		C88DE86D16B1AD1800C2C051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ajeet Singh (QT4GYM2LTE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ajeet Singh (QT4GYM2LTE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTMLTestApp/HTMLTestApp-Prefix.pch";
 				INFOPLIST_FILE = "HTMLTestApp/HTMLTestApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "95A3C405-F21C-47C3-B9B4-71CA84263CBA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "95A3C405-F21C-47C3-B9B4-71CA84263CBA";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

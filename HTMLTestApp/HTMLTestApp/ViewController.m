@@ -10,6 +10,8 @@
 
 #import "NextViewController.h"
 
+#import "SSZipArchive.h"
+
 @interface UIWebView (JavaScriptAlert)
 
 - (void)webView:(UIWebView *)sender runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WebFrame *)frame;
@@ -41,8 +43,30 @@
     
     [self setTitle:@"My Data"];
     
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
     
-//      [self.mywebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.2.11/jqdemo/demo.html"]]];
+    NSString *zipPath=[[NSBundle mainBundle] pathForResource:@"jqdemo" ofType:@"zip"];
+    
+    [SSZipArchive unzipFileAtPath:zipPath toDestination:documentsDirectory];
+    
+    NSLog(@"Path : %@",documentsDirectory);
+
+    
+    NSString *stringURL = @"http://192.168.2.6/jqdemo/demo.html";
+    
+//     NSString *stringURL = @"http://192.168.2.11/htmliosapp/table.html";
+    
+    NSURL  *url = [NSURL URLWithString:stringURL];
+    NSData *urlData = [NSData dataWithContentsOfURL:url];
+    if ( urlData )
+    {
+        
+        NSString  *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"index.html"];
+        [urlData writeToFile:filePath atomically:YES];
+    }
+    
+//    [self.mywebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.2.6/jqdemo/demo.html"]]];
     
 ////    [self.mywebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.2.11/htmliosapp/table.html"]]];
 //
@@ -50,20 +74,27 @@
 //    NSString *path = [[NSBundle mainBundle] bundlePath];
 //    NSURL *baseURL = [NSURL fileURLWithPath:path];
     
-    NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
-    NSString *secondParentPath = [[bundlePath stringByDeletingLastPathComponent] stringByDeletingLastPathComponent];
+//    NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
+//    NSString *secondParentPath = [[bundlePath stringByDeletingLastPathComponent] stringByDeletingLastPathComponent];
     
-    NSLog(@"path %@",secondParentPath);
+     NSURL *baseURL = [NSURL fileURLWithPath:[documentsDirectory stringByAppendingString:@"/"]];
     
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"html"];
     
-    NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
-    [self.mywebview loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:@"myinfo"]];
-
+//    NSLog(@"path %@",secondParentPath);
+    
+//    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:[@"" stringByAppendingFormat:@"/JQDemo/demo"] ofType:@"html"];
+    NSError *error;
+    
+    NSString *htmlFile = [NSString stringWithContentsOfFile:[documentsDirectory stringByAppendingFormat:@"/index.html"] encoding:NSUTF8StringEncoding error: &error];
+    
+     [self.mywebview loadHTMLString:htmlFile baseURL:baseURL];
+//    NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
+//    [self.mywebview loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:@"myinfo"]];
+//
     [self.mywebview setDelegate:self];
     
     
-  
+    [self.mywebview reload];
 }
 
 - (void)didReceiveMemoryWarning
@@ -112,12 +143,21 @@
 {
 //    NSString *cssPath = [[NSBundle mainBundle] pathForResource:@"jquery.mobile-1.2.0.min"
 //                                                        ofType:@"css"];
-//    NSString *js = @"document.getElementsByTagName('link').setAttribute('href','";
-//    NSString *js2 = [js stringByAppendingString:cssPath];
-//    NSString *finalJS = [js2 stringByAppendingString:@"');"];
 //    
-//    //check element structure
-//    NSString *res = [webView stringByEvaluatingJavaScriptFromString:finalJS];
+//    NSLog(@"%@",cssPath);
+//    
+//     NSData *cssData = [NSData dataWithContentsOfFile:cssPath];
+//    NSString* css = [[NSString alloc] initWithData:cssData encoding:NSASCIIStringEncoding];
+//    
+//     NSLog(@"css ---> %@",css);
+//    NSString* js = [NSString stringWithFormat:
+//                    @"var styleNode = document.createElement('style');\n"
+//                    "styleNode.type = \"text/css\";\n"
+//                    "var styleText = document.createTextNode(%@);\n"
+//                    "styleNode.appendChild(styleText);\n"
+//                    "document.getElementsByTagName('head')[0].appendChild(styleNode);\n",css];
+//    NSLog(@"js:\n%@",js);
+//    [webView stringByEvaluatingJavaScriptFromString:js];
     
     
     
